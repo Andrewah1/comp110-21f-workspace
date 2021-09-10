@@ -4,10 +4,14 @@ __author__ = "730389123"
 
 
 beat = str(input("What beat do you want to repeat? "))
+string = beat
 Counter: int = 0 
-Maximun: int = int(input("How many times do you want to repeat it? "))
-while Counter < Maximun:
-    Counter = Counter + 1
-    print(beat, end=" ")
-if Counter <= 0:
-    print("No beat...") 
+Maximum: int = int(input("How many times do you want to repeat it? "))
+if Maximum > 0:
+    Maximum = Maximum - 1 
+    while Counter < Maximum: 
+        string = string + " " + beat
+        Counter = Counter + 1
+    print(string)
+else:
+    print("No beat...")
