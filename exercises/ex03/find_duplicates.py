@@ -16,7 +16,7 @@ while i < len(word):
         j = j + 1
     i = i + 1
 
-if dup == False:
+if dup is False:
     print("Found duplicate: False")
 else:
-    print("Duplicate found: True")
+    print("Found duplicate: True")
