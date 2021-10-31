@@ -4,6 +4,7 @@ __author__ = "730389123"
 
 
 def main() -> None:
+    """Test statement."""
     print(favorite_color({"Marc": "yellow", "Ezri": "blue", "Kris": "blue"}))
 
 
@@ -30,7 +31,7 @@ def favorite_color(colors: dict[str, str]) -> str:
         ct: int = 0
         y: str = color_list[j]
         while k < len(color_list):
-            if color_list[k] == ct:
+            if color_list[k] == y:
                 ct += 1
             k += 1
         if i < ct:
@@ -49,6 +50,7 @@ def count(content: list[str]) -> dict[str, int]:
             count[content[i]] += 1
         else:
             count[content[i]] = 1
+        i += 1
     return count
 
 
