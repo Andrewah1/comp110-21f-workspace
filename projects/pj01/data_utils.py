@@ -90,14 +90,7 @@ def count(strings: list[str]) -> dict[str, int]:
     return result
 
 
-def aggregate(data: list[str], test: str) -> dict[str, int]:
-    """Simplifies data into just two possible results."""
-    result: dict[str, int] = {}
-    i: int = 0
-    while i < len(data):
-        if data[i] in result:
-            result[data[i]] += 1
-        else: 
-            result[data[i]] = 1
-        i += 1
+def aggregate(x: int, y: int) -> int:
+    """Combines two data values."""
+    result: int = x + y
     return result
